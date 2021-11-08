@@ -1,1 +1,1 @@
-# Files frm LnT Mobile Course
+# Files from LnT Mobile Course
