@@ -1,0 +1,14 @@
+import makhluk_hidup.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Manusia vassel = new Manusia();
+		vassel.nama = "Vassel";
+		vassel.usia = 19;
+		vassel.kota = "Jakarta";
+		vassel.bicara();
+	}
+
+}

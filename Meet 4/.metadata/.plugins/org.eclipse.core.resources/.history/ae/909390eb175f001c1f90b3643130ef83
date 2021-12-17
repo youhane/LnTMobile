@@ -1,0 +1,11 @@
+package makhluk_hidup;
+
+public class Manusia {
+	public String nama;
+	public int usia;
+	public String kota;
+	
+	public void bicara() {
+		System.out.println("Halo, saya " + nama);
+	}
+}
