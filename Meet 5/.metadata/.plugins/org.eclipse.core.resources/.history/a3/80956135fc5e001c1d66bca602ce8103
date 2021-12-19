@@ -1,0 +1,39 @@
+package makhluk_hidup;
+
+// INHERITANCE 
+public class Mahasiswa extends Manusia {
+	private String nim;
+	private String kampus;
+	private double gpa;
+	
+	public String getNim() {
+		return nim;
+	}
+	public void setNim(String nim) {
+		this.nim = nim;
+	}
+	
+	public String getKampus() {
+		return kampus;
+	}
+	public void setKampus(String kampus) {
+		this.kampus = kampus;
+	}
+	
+	public double getGpa() {
+		return gpa;
+	}
+	public void setGpa(double gpa) {
+		this.gpa = gpa;
+	}
+	
+	// OVERRIDING - POLYMORPHISM
+	public void bicara() {
+		System.out.println(super.getNama() + " adalah mahasiswa Binus " + kampus);
+	}
+	
+	public void jalan(int kecepatan) {
+		System.out.println(super.getNama() + " berjalan dengan kecepatan " + kecepatan + " m/s");
+	}
+	
+}
