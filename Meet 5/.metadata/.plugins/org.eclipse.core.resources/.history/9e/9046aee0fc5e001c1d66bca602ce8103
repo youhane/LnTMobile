@@ -1,7 +1,0 @@
-package makhluk_hidup;
-
-public class Hewan {
-	int jumlahKaki;
-	String jenisHewan;
-	String namaHewan;
-}
