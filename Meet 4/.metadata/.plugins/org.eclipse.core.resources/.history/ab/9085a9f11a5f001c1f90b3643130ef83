@@ -1,0 +1,12 @@
+package kendaraan;
+
+public class Helikopter {
+	int kecepatan;
+	String nama;
+	
+	public Helikopter(int kecepatan, String nama) {
+		this.kecepatan = kecepatan;
+		this.nama = nama;
+	}
+	
+}

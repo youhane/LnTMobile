@@ -1,0 +1,22 @@
+package makhluk_hidup;
+
+public class Manusia {
+	// ATTRIBUTE
+	public String nama;
+	public int usia;
+	public String kota;
+	
+	// CONSTRUCTOR
+	public Manusia(String nama, int usia, String kota) {
+		this.nama = nama;
+		this.usia = usia;
+		this.kota = kota;
+	}
+	
+	// METHOD
+	public void bicara() {
+		System.out.println("Halo, saya " + nama);
+		System.out.println("Saya berusia " + usia + " tahun");
+		System.out.println("Saya tinggal di " + kota);
+	}
+}
