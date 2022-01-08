@@ -1,0 +1,20 @@
+import makhluk_hidup.Manusia;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Manusia jessen = new Manusia();
+		jessen.setNama("Jessen");
+		jessen.setUsia(19);
+		jessen.setKota("Jakarta");
+		
+		System.out.println("Halo, nama saya " + jessen.getNama());
+		System.out.println("Saya berusia " + jessen.getUsia() + " tahun");
+		System.out.println("Dulu aya tinggal di " + jessen.getKota());
+		
+		jessen.setKota("Bandung");
+		System.out.println("Sekarang saya tinggal di " + jessen.getKota());
+	}
+
+}

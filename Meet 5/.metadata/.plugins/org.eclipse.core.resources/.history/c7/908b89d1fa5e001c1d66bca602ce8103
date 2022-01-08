@@ -1,0 +1,21 @@
+package makhluk_hidup;
+
+public class Dosen extends Manusia{
+	private String kode;
+	private String kampus;
+	
+	public String getKode() {
+		return kode;
+	}
+	public void setKode(String kode) {
+		this.kode = kode;
+	}
+	
+	public String getKampus() {
+		return kampus;
+	}
+	public void setKampus(String kampus) {
+		this.kampus = kampus;
+	}
+	
+}

@@ -1,0 +1,52 @@
+package makhluk_hidup;
+
+//ENCAPSULATION
+
+public class Manusia {
+	private int usia;
+	private String nama;
+	private String kota;
+	
+	//GETTER DAN SETTER
+	
+	public int getUsia() {
+		return usia;
+	}
+	public void setUsia(int usia) {
+		this.usia = usia;
+	}
+	
+	public String getNama() {
+		return nama;
+	}
+	public void setNama(String nama) {
+		this.nama = nama;
+	}
+	
+	public String getKota() {
+		return kota;
+	}
+	public void setKota(String kota) {
+		this.kota = kota;
+	}
+	
+	// POLYMORPHISM
+	public void bicara() {
+		System.out.println("Halo, nama saya " + nama);
+	}
+	
+	// OVERLOADING
+	public void jalan() {
+		System.out.println(nama + " sedang berjalan...");
+	}
+	
+	public void jalan(int kecepatan) {
+		System.out.println(nama + " berjalan dengan kecepatan " + kecepatan + " m/s");
+	}
+	
+	public void jalan(int kecepatan, String tujuan, int jarak) {
+		System.out.println(nama + " berjalan dengan kecepatan " + kecepatan + " m/s" +
+				" menuju " + tujuan + " yang berjarak " + jarak + " km");	
+	}
+	
+}
