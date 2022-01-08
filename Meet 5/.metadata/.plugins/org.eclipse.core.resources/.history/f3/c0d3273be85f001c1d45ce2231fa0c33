@@ -1,0 +1,8 @@
+package kendaraan;
+
+public class Motor {
+	String merk;
+	String namaMotor;
+	int kapasitas;
+	int topSpeed;
+}

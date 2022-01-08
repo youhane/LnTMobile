@@ -1,0 +1,21 @@
+import makhluk_hidup.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Manusia vassel = new Manusia();
+		vassel.setNama("Vassel");
+		vassel.setUsia(20);
+		vassel.setKota("Jakarta");
+		
+		System.out.println("Halo, nama saya " + vassel.getNama());
+		System.out.println("Saya berusia " + vassel.getUsia() + " tahun");
+		System.out.println("Saya berasal dari " + vassel.getKota());
+		
+		vassel.setKota("Bandung");
+		System.out.println("Saya berasal dari " + vassel.getKota());
+//		vassel.bicara();
+	}
+
+}
