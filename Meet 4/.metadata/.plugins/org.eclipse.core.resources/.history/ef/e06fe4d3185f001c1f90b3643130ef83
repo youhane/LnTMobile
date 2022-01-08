@@ -1,0 +1,19 @@
+package makhluk_hidup;
+
+public class Manusia {
+	String nama;
+	int usia;
+	String kota;
+	
+	public Manusia(String nama, int usia, String kota) {
+		this.nama = nama;
+		this.usia = usia;
+		this.kota = kota;
+	}
+	
+	public void bicara() {
+		System.out.println("Halo, saya " + nama);
+		System.out.println("Saya berusia " + usia + " tahun");
+		System.out.println("Saya tinggal di " + kota);
+	}
+}
