@@ -1,0 +1,5 @@
+package kendaraan;
+
+public abstract class Kendaraan {
+
+}

@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+/*
+Buatlah sebuah program yang dapat melakukan input dan menampilkan data terkait
+administrasi kampus.
+Adapun permintaan untuk program sebagai berikut:
+1) Pengguna dapat menginput nama mahasiswa (harus lebih dari 5 huruf)
+2) Pengguna dapat menginput NIM mahasiswa (harus tepat 10 karakter)
+3) Pengguna dapat menginput lokasi mahasiswa (harus antara Kemanggisan, Alam Sutera,
+Bekasi, Bandung, Semarang, atau Malang)
+4) Pengguna dapat melihat data-data yang telah diinput
+*/
+public class Main {
+	
+	Scanner scan = new Scanner(System.in);
+	
+	public void mainMenu() {
+		int input;
+		do {
+			System.out.println("1. Input");
+			System.out.println("2. View");
+			System.out.print(">> ");
+			input = scan.nextInt();
+			scan.nextLine();
+		}while(input != 1 && input != 2);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new Main();
+	}
+
+}

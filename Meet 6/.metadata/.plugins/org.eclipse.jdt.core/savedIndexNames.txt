@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+D:\Christopher\BINUS\BNCC\Semester 3-4\Materi LnT\Pertemuan 6\.metadata\.plugins\org.eclipse.jdt.core
+535366336.index
+704440673.index
+2173542243.index
+3080223938.index

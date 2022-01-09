@@ -1,0 +1,8 @@
+package kendaraan;
+
+public abstract class Kendaraan {
+	String nama;
+	int jumlahRoda;
+	public abstract void jalan();
+	public abstract void rem();
+}

@@ -1,0 +1,29 @@
+import kendaraan.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// ABSTRACT CLASS DAN ABSTRACT METHOD
+		Kendaraan innova = new Mobil();
+		Mobil sienta = new Mobil();
+		innova.setNama("Innova");
+		innova.setJumlahRoda(4);
+		innova.jalan(innova.getNama());
+		
+		sienta.setNama("Sienta");
+		sienta.setJumlahRoda(4);
+		sienta.rem(sienta.getNama());
+		
+		innova.setKapasitasBensin(2000);
+		innova.setKecepatanMaksimum(180);
+		innova.isiBensin(innova.getNama(), innova.getKapasitasBensin());
+		innova.ngebut(innova.getNama(), innova.getKecepatanMaksimum());
+		
+		sienta.setKapasitasBensin(1500);
+		sienta.setKecepatanMaksimum(170);
+		sienta.isiBensin(sienta.getNama(), sienta.getKecepatanMaksimum());
+		sienta.ngebut(sienta.getNama(), sienta.getKecepatanMaksimum());
+	}
+
+}
