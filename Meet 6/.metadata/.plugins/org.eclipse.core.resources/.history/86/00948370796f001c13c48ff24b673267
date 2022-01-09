@@ -1,0 +1,53 @@
+import kendaraan.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// ABSTRACT CLASS DAN ABSTRACT METHOD
+//		Kendaraan innova = new Mobil();
+//		Mobil sienta = new Mobil();
+//		innova.setNama("Innova");
+//		innova.setJumlahRoda(4);
+//		innova.jalan(innova.getNama());
+//		
+//		sienta.setNama("Sienta");
+//		sienta.setJumlahRoda(4);
+//		sienta.rem(sienta.getNama());
+//		
+//		innova.setKapasitasBensin(2000);
+//		innova.setKecepatanMaksimum(180);
+//		innova.isiBensin(innova.getNama(), innova.getKapasitasBensin());
+//		innova.ngebut(innova.getNama(), innova.getKecepatanMaksimum());
+//		
+//		sienta.setKapasitasBensin(1500);
+//		sienta.setKecepatanMaksimum(170);
+//		sienta.isiBensin(sienta.getNama(), sienta.getKecepatanMaksimum());
+//		sienta.ngebut(sienta.getNama(), sienta.getKecepatanMaksimum());
+		
+		Kendaraan supra = new Motor();
+		Motor vario = new Motor();
+		supra.setNama("Supra X");
+		supra.setJumlahRoda(2);
+		supra.setKapasitasBensin(150);
+		supra.setKecepatanMaksimum(160);
+		
+		vario.setNama("Vario");
+		vario.setJumlahRoda(2);
+		vario.setKecepatanMaksimum(180);
+		vario.setKecepatanMaksimum(150);
+		
+//		supra.jalan(supra.getNama());
+//		supra.rem(supra.getNama());
+//		supra.isiBensin(supra.getNama(), supra.getKapasitasBensin());
+//		supra.ngebut(supra.getNama(), supra.getKecepatanMaksimum());
+//		
+//		vario.jalan(vario.getNama());
+//		vario.rem(vario.getNama());
+//		vario.isiBensin(vario.getNama(), vario.getKapasitasBensin());
+//		vario.ngebut(vario.getNama(), vario.getKecepatanMaksimum());
+		
+		supra.start();
+	}
+
+}

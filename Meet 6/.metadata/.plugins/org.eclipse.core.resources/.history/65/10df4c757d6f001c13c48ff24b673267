@@ -1,0 +1,83 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+/*
+Buatlah sebuah program yang dapat melakukan input dan menampilkan data terkait
+administrasi kampus.
+Adapun permintaan untuk program sebagai berikut:
+1) Pengguna dapat menginput nama mahasiswa (harus lebih dari 2 huruf)
+2) Pengguna dapat menginput usia mahasiswa (harus lebih dari 16)
+3) Pengguna dapat menginput NIM mahasiswa (harus tepat 10 karakter)
+4) Pengguna dapat menginput lokasi mahasiswa (harus antara Kemanggisan, Alam Sutera,
+Bekasi, Bandung, Semarang, atau Malang)
+5) Pengguna dapat melihat data-data yang telah diinput
+*/
+public class Main {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<Mahasiswa> mahasiswa = new ArrayList<>();
+		Scanner scan = new Scanner(System.in);
+		int input, usia;
+		String nama, nim, lokasi;
+		do{
+			System.out.println("1. Input");
+			System.out.println("2. View");
+			System.out.println("3. Exit");
+			System.out.print(">> ");
+			input = scan.nextInt();
+			scan.nextLine();
+			if(input == 1) {
+				Mahasiswa maba = new Mahasiswa();
+				int valid = 0;
+				do{
+					System.out.print("Nama: ");
+					nama = scan.nextLine();
+					if(nama.length() > 2) {
+						maba.setNama(nama);
+						valid = 1;
+					}
+				}while(valid != 1);
+				valid = 0;
+				do{
+					System.out.print("Usia: ");
+					usia = scan.nextInt();
+					scan.nextLine();
+					if(usia > 15) {
+						maba.setUsia(usia);
+						valid = 1;
+					}
+				}while(valid != 1);
+				valid = 0;
+				do{
+					System.out.print("NIM: ");
+					nim = scan.nextLine();
+					if(nim.length() == 10) {
+						maba.setNim(nim);
+						valid = 1;
+					}
+				}while(valid != 1);
+				valid = 0;
+				do{
+					System.out.print("Lokasi: ");
+					lokasi = scan.nextLine();
+					if(lokasi.equalsIgnoreCase("Kemanggisan") || 
+						lokasi.equalsIgnoreCase("Alam Sutera") ||
+						lokasi.equalsIgnoreCase("Bekasi") ||
+						lokasi.equalsIgnoreCase("Bandung") ||
+						lokasi.equalsIgnoreCase("Semarang") ||
+						lokasi.equalsIgnoreCase("Malang")){
+						maba.setLokasi(lokasi);
+						valid = 1;
+					}
+				}while(valid != 1);
+			}
+			else if(input == 3) {
+				return;
+			}
+		}while(input != 3);
+		
+		scan.close();
+	}
+
+}

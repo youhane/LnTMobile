@@ -1,0 +1,17 @@
+import kendaraan.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Kendaraan innova = new Mobil();
+		Mobil sienta = new Mobil();
+		innova.setNama("Innova");
+		innova.setJumlahRoda(4);
+		innova.jalan(innova.getNama());
+		sienta.setNama("Sienta");
+		sienta.setJumlahRoda(4);
+		sienta.rem(sienta.getNama());
+	}
+
+}

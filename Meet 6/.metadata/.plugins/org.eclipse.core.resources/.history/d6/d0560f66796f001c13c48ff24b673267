@@ -1,0 +1,37 @@
+package kendaraan;
+
+public abstract class Kendaraan {
+	private String nama;
+	private int jumlahRoda;
+	private int kapasitasBensin;
+	private int kecepatanMaksimum;
+	public abstract void jalan(String nama);
+	public abstract void rem(String nama);
+	public abstract void isiBensin(String nama, int jumlah);
+	public abstract void ngebut(String nama, int kecepatan);
+	public String getNama() {
+		return nama;
+	}
+	public void setNama(String nama) {
+		this.nama = nama;
+	}
+	public int getJumlahRoda() {
+		return jumlahRoda;
+	}
+	public void setJumlahRoda(int jumlahRoda) {
+		this.jumlahRoda = jumlahRoda;
+	}
+	public int getKapasitasBensin() {
+		return kapasitasBensin;
+	}
+	public void setKapasitasBensin(int kapasitasBensin) {
+		this.kapasitasBensin = kapasitasBensin;
+	}
+	public int getKecepatanMaksimum() {
+		return kecepatanMaksimum;
+	}
+	public void setKecepatanMaksimum(int kecepatanMaksimum) {
+		this.kecepatanMaksimum = kecepatanMaksimum;
+	}
+	
+}

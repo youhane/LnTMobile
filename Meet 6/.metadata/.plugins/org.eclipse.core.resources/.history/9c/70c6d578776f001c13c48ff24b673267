@@ -1,0 +1,10 @@
+package kendaraan;
+
+public class Mobil extends Kendaraan {
+	public void jalan() {
+		System.out.println("Mobil dijalankan...");
+	}
+	public void rem() {
+		System.out.println("Mobil direm...");
+	}
+}

@@ -1,0 +1,66 @@
+import java.util.Scanner;
+
+/*
+ 
+ Buatlah sebuah program di mana pengguna dapat melakukan input dan melihat data-data
+ input administrasi perkuliahan.
+ 1) Pengguna dapat menginput nama (panjang nama harus lebih dari 2 huruf)
+ 2) Pengguna dapat menginput usia (usia harus lebih dari 15 tahun)
+ 3) Pengguna dapat menginput NIM (panjang NIM harus 10 huruf)
+ 4) Pengguna dapat menginput lokasi (lokasi harus di antara Kemanggisan, Alam Sutera,
+ Bekasi, Bandung, Semarang, Malang)
+ 5) Pengguna dapat melihat data-data input
+ 
+*/
+
+public class Main {
+	
+	Scanner scan = new Scanner(System.in);
+	int input;
+	
+	void input() {
+		
+	}
+	
+	void view() {
+		
+	}
+	
+	void exit() {
+		return;
+	}
+	
+	void mainmenu() {
+		System.out.println("==========");
+		System.out.println("1. Input");
+		System.out.println("2. View");
+		System.out.println("3. Exit");
+		System.out.print(">> ");
+		input = scan.nextInt();
+		scan.nextLine();
+		switch(input) {
+			case 1:
+				input();
+				break;
+			case 2:
+				view();
+				break;
+			case 3:
+				exit();
+				break;
+			default:
+				mainmenu();
+		}
+	}
+
+	public Main() {
+		// TODO Auto-generated constructor stub
+		mainmenu();
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new Main();
+	}
+
+}

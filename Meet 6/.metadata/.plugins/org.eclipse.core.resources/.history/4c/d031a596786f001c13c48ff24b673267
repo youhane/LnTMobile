@@ -1,0 +1,10 @@
+package kendaraan;
+
+public class Motor extends Kendaraan {
+	public void jalan(String nama) {
+		System.out.println(nama + " digas...");
+	}
+	public void rem(String nama) {
+		System.out.println(nama + " dihentikan...");
+	}
+}
