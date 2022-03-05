@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/bncc_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrasi BNCC"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingTop="10dp" />
+
+    <ImageView
+        android:id="@+id/bncc_image"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:src="@drawable/download"
+        app:layout_constraintTop_toBottomOf="@id/bncc_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/name_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Lengkap"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/bncc_image"
+        android:paddingHorizontal="10dp" />
+
+    <EditText
+        android:id="@+id/email_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Binusian"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/name_et"
+        android:paddingHorizontal="10dp" />
+
+    <EditText
+        android:id="@+id/pass_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/email_et"
+        android:paddingHorizontal="10dp" />
+
+    <RadioGroup
+        android:id="@+id/gender_rg"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/pass_et"
+        android:paddingHorizontal="10dp">
+
+        <TextView
+            android:id="@+id/gender_text"
+            android:text="Gender:"
+            android:textSize="16sp"
+            android:textColor="@color/blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/male_rb"
+            android:text="Male"
+            android:textSize="16sp"
+            android:textColor="@color/blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/female_rb"
+            android:text="Female"
+            android:textSize="16sp"
+            android:textColor="@color/blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/role_text"
+        android:text="Role:"
+        android:textSize="16sp"
+        android:textColor="@color/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/gender_rg"
+        android:paddingHorizontal="10dp"/>
+
+    <CheckBox
+        android:id="@+id/member_cb"
+        android:text="Member"
+        android:textSize="16sp"
+        android:textColor="@color/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/role_text" />
+
+    <CheckBox
+        android:id="@+id/praetorian_cb"
+        android:text="Praetorian"
+        android:textSize="16sp"
+        android:textColor="@color/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/role_text"
+        app:layout_constraintStart_toEndOf="@id/member_cb"/>
+
+    <CheckBox
+        android:id="@+id/activist_cb"
+        android:text="Activist"
+        android:textSize="16sp"
+        android:textColor="@color/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/role_text"
+        app:layout_constraintStart_toEndOf="@id/praetorian_cb"/>
+
+    <Button
+        android:id="@+id/faq_btn"
+        android:text="Frequently Asked Questions"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/member_cb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/register_btn"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/faq_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
